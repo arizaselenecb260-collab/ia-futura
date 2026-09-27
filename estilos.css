@@ -1,0 +1,480 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef6ff;
+    color: #172b4d;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.hero {
+    min-height: 520px;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    background:
+        radial-gradient(circle at 80% 20%, #ffffff55, transparent 30%),
+        linear-gradient(135deg, #063b5c, #0879b5, #4facfe);
+
+    color: white;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 30px;
+    background: #ffffff22;
+    border: 1px solid #ffffff66;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    margin: 15px 0 5px;
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.hero-image {
+    width: 420px;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: contain;
+
+    filter: drop-shadow(0 20px 30px #001f3f66);
+
+    transition: transform 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+
+/* =========================
+   BOTÓN
+========================= */
+
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 25px;
+
+    background: white;
+    color: #086b9f;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    box-shadow: 0 8px 20px #001f3f44;
+
+    transition: 0.3s;
+}
+
+.boton:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px #001f3f66;
+}
+
+
+/* =========================
+   MENÚ
+========================= */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background: #052f49;
+    box-shadow: 0 5px 20px #0003;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    padding: 18px 22px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #0b6fa4;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+main {
+    width: 90%;
+    max-width: 1150px;
+    margin: 50px auto;
+}
+
+section {
+    background: white;
+
+    padding: 45px;
+
+    margin-bottom: 30px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px #1234;
+
+    border: 1px solid #d7eaff;
+}
+
+section h2 {
+    color: #0875ad;
+    font-size: 32px;
+}
+
+section p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   BIENVENIDA
+========================= */
+
+.bienvenida {
+    text-align: center;
+}
+
+.bienvenida .etiqueta {
+    color: #0875ad;
+    background: #e4f4ff;
+    border: none;
+}
+
+.bienvenida h2 {
+    font-size: 38px;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.titulo-centro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.tarjetas {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.tarjeta {
+    display: block;
+
+    padding: 30px 20px;
+
+    background: linear-gradient(
+        145deg,
+        #f8fcff,
+        #e8f5ff
+    );
+
+    border: 1px solid #cce8fa;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    color: #172b4d;
+
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 30px #0875ad33;
+
+    border-color: #4facfe;
+}
+
+.tarjeta h3 {
+    color: #0875ad;
+    font-size: 21px;
+}
+
+.tarjeta p {
+    font-size: 15px;
+}
+
+.icono {
+    font-size: 45px;
+}
+
+
+/* =========================
+   FRASE
+========================= */
+
+.frase {
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0875ad,
+            #4facfe
+        );
+
+    color: white;
+}
+
+.frase p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    background: #052f49;
+
+    color: white;
+
+    padding: 35px 20px;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 8px;
+    color: #d9efff;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 850px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 25px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .hero-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    nav {
+        position: static;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 13px;
+    }
+
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-image {
+        width: 240px;
+        height: 240px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .bienvenida h2 {
+        font-size: 28px;
+    }
+
+    .frase p {
+        font-size: 19px;
+    }
+
+}
+ /* =========================
+   FORMULARIO DE CONTACTO
+========================= */
+
+form {
+    max-width: 750px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #0875ad;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+
+    border: 2px solid #cce8fa;
+    border-radius: 12px;
+
+    background: #f8fcff;
+    color: #172b4d;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #4facfe;
+
+    box-shadow:
+        0 0 0 4px #4facfe22;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    margin-top: 15px;
+
+    padding: 15px 25px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #0875ad,
+        #4facfe
+    );
+
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+form button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 20px #0875ad44;
+}

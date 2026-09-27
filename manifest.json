@@ -1,0 +1,19 @@
+{
+    "name": "IA Futura",
+    "short_name": "IA Futura",
+    "description": "Proyecto escolar sobre Inteligencia Artificial",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#eef6ff",
+    "theme_color": "#0875ad",
+    "orientation": "portrait-primary",
+
+    "icons": [
+        {
+            "src": "imagenes/icono-ia.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}
